@@ -1,10 +1,15 @@
 import React from 'react';
+import Counter from './Counter';
 
 const ItemListContainer = ({saludos}) => {
-    return (
-        <>
-          <h2>Aqui van las {saludos}</h2>  
-        </>
+  function onAdd(count) {
+    console.log(`el carrito tiene ${count} productos`)
+  }  
+  return (
+         <div>
+          <Counter stock={5} onAdd={onAdd}/>
+         </div>
+        
     );
 }
 
