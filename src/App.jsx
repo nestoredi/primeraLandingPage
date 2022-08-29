@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Counter from './Counter';
 import Barra from './Barra';
 import ItemListContainer from './ItemListContainer';
+import Comics from './Comics';
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
      
      <Barra />
      <ItemListContainer/>
+     <Comics />
     </div>
   );
 }

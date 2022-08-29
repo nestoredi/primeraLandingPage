@@ -10,7 +10,7 @@ const Counter = ({stock, onAdd}) => {
     }
 
     function rest() {
-        if (count>= 1) {
+        if (count> 1) {
             setCount(count-1)
         }
     }
@@ -30,7 +30,7 @@ const Counter = ({stock, onAdd}) => {
             <button className='btn btn-secondary' onClick={add}> + </button>
         </div>
         <div>
-            <button className='btn btn-dark' onClick={()=> onAdd(count)}> Confirmar</button>
+            <button className='btn btn-dark' disabled={count===0} onClick={()=> onAdd(count)}> Confirmar</button>
         </div>
             </div> 
         </div>
