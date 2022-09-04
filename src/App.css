@@ -13,4 +13,8 @@
   color: beige;
   font-size: 30px;
 }
+.row{
+  display: flex;
+  flex-direction: row;
+}
 

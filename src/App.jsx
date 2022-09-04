@@ -3,6 +3,7 @@ import './App.css';
 import Barra from './Barra';
 import ItemListContainer from './ItemListContainer';
 import Comics from './Comics';
+import IItemDetailsContainer from './iItemDetailsContainer';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
      
      <Barra />
      <ItemListContainer/>
-     <Comics />
+     <IItemDetailsContainer/>
+     
     </div>
   );
 }

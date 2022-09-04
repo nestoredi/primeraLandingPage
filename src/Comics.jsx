@@ -1,10 +1,15 @@
 import {React, useState, useEffect} from 'react';
 
-const comics =[ { nombre:"Rebirth", imagen:"",precio: 25, stock:10},
-{ nombre:"Cape", imagen:"",precio: 25, stock:10},
-{ nombre:"Justice Legue", imagen:"",precio: 25, stock:10},
-{ nombre:"Superman", imagen:"",precio: 25, stock:10},
-{ nombre:"The killing joke", imagen:"",precio: 25, stock:10}]
+const comics =[
+{id: 1, categoria: "arte",nombre:"Batman", imagen:"./img/cape.jpg",precio:25, stock:10},
+{id: 2, categoria: "arte",nombre:"Superman", imagen:"./img/superman.jpg", precio:25, stock:10},
+{id: 3, categoria: "arte",nombre:"Joker", imagen:"./img/the-killing-joke.jpg",precio:25, stock:10},
+{id: 4, categoria: "arte",nombre:"Rebirth", imagen:"./img/justiceLeague.jpg",precio:25, stock:10},
+{id: 5, categoria: "comic",nombre:"Cape", imagen:"",precio:25, stock:10},
+{id: 6, categoria: "comic",nombre:"Justice Legue",imagen:"", precio:25, stock:10},
+{id: 7, categoria: "comic",nombre:"Superman", imagen:"", precio:25, stock:10},
+{id: 8, categoria: "comic",nombre:"The killing joke",imagen:"",precio: 25, stock:10}
+]
 
 function consultarComic(confirmacion) {
       return new Promise ((res,rej)=>{
